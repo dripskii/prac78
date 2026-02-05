@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты / Отзывы — CodeCourse</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar is-light" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html"><strong>CodeCourse</strong></a>
+  </div>
+
+  <div class="navbar-menu is-active">
+    <div class="navbar-end">
+      <a class="navbar-item" href="index.html">Главная</a>
+      <a class="navbar-item" href="faq.html">FAQ</a>
+      <a class="navbar-item is-active" href="contacts.html" aria-current="page">Контакты / Отзывы</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title is-2">Контакты и обратная связь</h1>
+    <p class="subtitle is-6">Оставь вопрос или отзыв — мы ответим на email.</p>
+
+    <div class="columns">
+      <div class="column is-6">
+        <form id="feedbackForm">
+          <div class="field">
+            <label class="label">Имя</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Ваше имя" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="example@email.com" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Тема</label>
+            <div class="control">
+              <div class="select is-fullwidth">
+                <select required>
+                  <option value="" disabled selected>Выберите тему</option>
+                  <option>Запись на курс</option>
+                  <option>Вопрос</option>
+                  <option>Предложение</option>
+                  <option>Благодарность</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Сообщение</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Ваше сообщение..." rows="5" required></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" required>
+                Соглашаюсь на обработку персональных данных
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary" type="submit">
+                Отправить
+              </button>
+              <a class="button is-light" href="index.html">На главную</a>
+            </div>
+          </div>
+
+          <p class="is-size-7 has-text-grey">
+            (Для учебной работы форма не отправляет данные на сервер.)
+          </p>
+        </form>
+      </div>
+
+      <div class="column is-6">
+        <div class="box">
+          <h2 class="title is-4">Контакты</h2>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Москва, ул. Примерная, 123</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> +7 (999) 123-45-67</p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i> info@example.com</p>
+
+          <hr>
+
+          <p><strong>Соцсети:</strong></p>
+          <p>
+            <i class="fab fa-telegram" aria-hidden="true"></i> Telegram ·
+            <i class="fab fa-vk" aria-hidden="true"></i> VK
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p><strong>CodeCourse</strong> © 2026</p>
+    <p>
+      <a href="index.html">Главная</a> ·
+      <a href="faq.html">FAQ</a> ·
+      <a href="contacts.html">Контакты</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

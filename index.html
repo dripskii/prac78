@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Онлайн-курс по программированию</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeCourse — онлайн-курс по программированию</title>
 
   <!-- Bulma -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
-<!-- Header -->
-<nav class="navbar is-light">
+<!-- Header (одинаковый на всех страницах) -->
+<nav class="navbar is-light" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item"><strong>CodeCourse</strong></a>
+    <a class="navbar-item" href="index.html"><strong>CodeCourse</strong></a>
+  </div>
+
+  <div class="navbar-menu is-active">
+    <div class="navbar-end">
+      <a class="navbar-item is-active" href="index.html" aria-current="page">Главная</a>
+      <a class="navbar-item" href="faq.html">FAQ</a>
+      <a class="navbar-item" href="contacts.html">Контакты / Отзывы</a>
+    </div>
   </div>
 </nav>
 
@@ -27,10 +32,8 @@
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title is-1">Онлайн-курс по программированию</h1>
-      <h2 class="subtitle is-4">
-        Освой frontend и backend с нуля за 3 месяца
-      </h2>
-      <a class="button is-large is-light">Записаться на курс</a>
+      <h2 class="subtitle is-4">Освой frontend и backend с нуля за 3 месяца</h2>
+      <a class="button is-large is-light" href="contacts.html">Записаться / Оставить заявку</a>
     </div>
   </div>
 </section>
@@ -48,39 +51,48 @@
 <!-- Features -->
 <section class="section">
   <div class="container">
+    <h2 class="title has-text-centered">Преимущества</h2>
     <div class="columns">
       <div class="column">
         <div class="box has-text-centered">
-          <i class="fas fa-code fa-2x"></i>
+          <span class="icon is-large"><i class="fas fa-code fa-2x" aria-hidden="true"></i></span>
           <h3 class="title is-5">Практика</h3>
-          <p>Реальные проекты</p>
+          <p>Делаем реальные мини-проекты</p>
         </div>
       </div>
       <div class="column">
         <div class="box has-text-centered">
-          <i class="fas fa-user-graduate fa-2x"></i>
+          <span class="icon is-large"><i class="fas fa-user-graduate fa-2x" aria-hidden="true"></i></span>
           <h3 class="title is-5">Наставники</h3>
-          <p>Опытные разработчики</p>
+          <p>Поддержка и разбор ошибок</p>
         </div>
       </div>
       <div class="column">
         <div class="box has-text-centered">
-          <i class="fas fa-briefcase fa-2x"></i>
+          <span class="icon is-large"><i class="fas fa-briefcase fa-2x" aria-hidden="true"></i></span>
           <h3 class="title is-5">Результат</h3>
-          <p>Готовое портфолио</p>
+          <p>Портфолио + план развития</p>
         </div>
       </div>
+    </div>
+
+    <div class="has-text-centered mt-5">
+      <a class="button is-link is-light" href="faq.html">Посмотреть FAQ</a>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
+<!-- Footer (одинаковый на всех страницах) -->
 <footer class="footer">
   <div class="content has-text-centered">
+    <p><strong>CodeCourse</strong> © 2026</p>
     <p>
-      <strong>CodeCourse</strong> © 2026  
-      <br>
-      <a>Telegram</a> · <a>VK</a> · <a>Email</a>
+      <a href="contacts.html">Контакты</a> ·
+      <a href="faq.html">FAQ</a> ·
+      <a href="index.html">Главная</a>
+    </p>
+    <p class="is-size-7 has-text-grey">
+      Telegram · VK · Email
     </p>
   </div>
 </footer>

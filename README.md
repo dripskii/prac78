@@ -4,4 +4,3 @@ CSS-фреймворк: Bulma
 Ссылка на GitHub Pages:  
 - [Публичная страница на GitHub Pages](https://dripskii.github.io/prac78/)
 
-Проект представляет собой минималистичный одностраничный лендинг.
