@@ -37,7 +37,7 @@
   </div>
 </section>
 
-<!-- About -->
+<!-- О курсе -->
 <section class="section">
   <div class="container">
     <h2 class="title has-text-centered">О курсе</h2>
@@ -47,86 +47,31 @@
   </div>
 </section>
 
-<!-- Форма обратной связи на главной странице (добавляем валидацию) -->
-<section class="section">
+<!-- Преимущества -->
+<section id="features" class="section">
   <div class="container">
-    <h2 class="title has-text-centered">Оставьте свой отзыв</h2>
-
-    <div class="columns is-centered">
-      <div class="column is-half">
-        <form id="feedbackForm">
-          <!-- Поле ФИО -->
-          <div class="field">
-            <label class="label">ФИО <span class="has-text-danger">*</span></label>
-            <div class="control has-icons-left">
-              <input class="input" type="text" id="fullname" placeholder="Иванов Иван Иванович">
-              <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-              </span>
-            </div>
-            <p class="help" id="fullnameHelp">Введите фамилию, имя и отчество</p>
-          </div>
-
-          <!-- Поле Телефон -->
-          <div class="field">
-            <label class="label">Телефон <span class="has-text-danger">*</span></label>
-            <div class="control has-icons-left">
-              <input class="input" type="tel" id="phone" placeholder="+7 (___) ___-__-__">
-              <span class="icon is-small is-left">
-                <i class="fas fa-phone"></i>
-              </span>
-            </div>
-            <p class="help" id="phoneHelp">Формат: +7 (XXX) XXX-XX-XX</p>
-          </div>
-
-          <!-- Поле Email -->
-          <div class="field">
-            <label class="label">Email <span class="has-text-danger">*</span></label>
-            <div class="control has-icons-left">
-              <input class="input" type="email" id="email" placeholder="example@mail.ru">
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-            </div>
-            <p class="help" id="emailHelp">Введите корректный email адрес</p>
-          </div>
-
-          <!-- Поле Сообщение -->
-          <div class="field">
-            <label class="label">Сообщение</label>
-            <div class="control">
-              <textarea class="textarea" id="message" placeholder="Текст сообщения..."></textarea>
-            </div>
-            <p class="help" id="messageHelp">До 500 символов</p>
-          </div>
-
-          <!-- Согласие на обработку данных -->
-          <div class="field">
-            <div class="control">
-              <label class="checkbox">
-                <input type="checkbox" id="agreement" required>
-                Я согласен на обработку персональных данных
-              </label>
-            </div>
-          </div>
-
-          <!-- Кнопка отправки -->
-          <div class="field is-grouped is-grouped-centered">
-            <div class="control">
-              <button type="submit" class="button is-primary">
-                <span class="icon">
-                  <i class="fas fa-paper-plane"></i>
-                </span>
-                <span>Отправить</span>
-              </button>
-            </div>
-            <div class="control">
-              <button type="reset" class="button is-light">
-                <span>Очистить</span>
-              </button>
-            </div>
-          </div>
-        </form>
+    <h2 class="title has-text-centered">Преимущества</h2>
+    <div class="columns">
+      <div class="column">
+        <div class="box has-text-centered">
+          <span class="icon is-large"><i class="fas fa-code fa-2x" aria-hidden="true"></i></span>
+          <h3 class="title is-5">Практика</h3>
+          <p>Делаем реальные мини-проекты</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box has-text-centered">
+          <span class="icon is-large"><i class="fas fa-user-graduate fa-2x" aria-hidden="true"></i></span>
+          <h3 class="title is-5">Наставники</h3>
+          <p>Поддержка и разбор ошибок</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box has-text-centered">
+          <span class="icon is-large"><i class="fas fa-briefcase fa-2x" aria-hidden="true"></i></span>
+          <h3 class="title is-5">Результат</h3>
+          <p>Портфолио + план развития</p>
+        </div>
       </div>
     </div>
   </div>
