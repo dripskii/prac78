@@ -2,10 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('feedbackForm');
   if (!form) return;
 
+  // Исправляем обработку события
   form.addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // Отменяем стандартную отправку формы
 
-    // Сбрасываем предыдущие ошибки
+    // Сбрасываем ошибки
     document.querySelectorAll('.input.is-danger, .textarea.is-danger').forEach(el => {
       el.classList.remove('is-danger');
     });
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let isValid = true;
 
-    // Проверка ФИО
+    // 1. Проверка ФИО
     const fullname = document.getElementById('fullname');
     const fullnameValue = fullname.value.trim();
     if (fullnameValue === '') {
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
       isValid = false;
     }
 
-    // Проверка телефона
+    // 2. Проверка телефона
     const phone = document.getElementById('phone');
     const phoneValue = phone.value.trim();
     const phoneDigits = phoneValue.replace(/\D/g, '');
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
       isValid = false;
     }
 
-    // Проверка email
+    // 3. Проверка email
     const email = document.getElementById('email');
     const emailValue = email.value.trim();
     if (emailValue === '') {
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
       isValid = false;
     }
 
+    // Если форма прошла валидацию, отправляем данные
     if (isValid) {
       const formData = {
         fullname: fullnameValue,
@@ -62,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // Функция для отображения ошибки
   function showError(input, message) {
     input.classList.add('is-danger');
     const help = document.createElement('p');
